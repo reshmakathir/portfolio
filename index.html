@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Reshma K — Data Analyst and Data Science Portfolio</title>
+  <meta name="description" content="Reshma K | Entry-level Data Analyst — Projects, Experience, Skills" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724; /* deep navy */
+      --card:#0b1220;
+      --muted:#9aa4b2;
+      --accent:#2652d6; /* blue */
+      --glass: rgba(255,255,255,0.04);
+      --radius:14px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Arial,sans-serif;margin:0;background:linear-gradient(180deg,#2c4366 0%, #071826 100%);color:#e6eef6;line-height:1.5}
+    a{color:var(--accent);text-decoration:none}
+    header{backdrop-filter:blur(6px);position:sticky;top:0;z-index:40;padding:14px 20px;border-bottom:1px solid rgba(202, 195, 195, 0.03);display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:12px;align-items:center}
+    .brand h1{font-size:18px;margin:0}
+    nav ul{list-style:none;margin:0;padding:0;display:flex;gap:18px}
+    nav li{font-weight:600}
+    .btn{background:var(--accent);color:rgb(52, 48, 48);padding:8px 12px;border-radius:10px;font-weight:600}
+
+    /* Hero */
+    .container{max-width:1100px;margin:36px auto;padding:0 20px}
+    .hero{display:grid;grid-template-columns:1fr 340px;gap:28px;align-items:center}
+    .intro h2{margin:0;font-size:28px}
+    .intro p{color:var(--muted);margin:12px 0 18px}
+    .links{display:flex;gap:12px;align-items:center}
+    .photo{background:linear-gradient(180deg,#15202b,#0b1220);border-radius:18px;padding:22px;display:flex;flex-direction:column;align-items:center;gap:18px}
+    .avatar{width:220px;height:220px;border-radius:14px;object-fit:cover;display:block;background:linear-gradient(90deg,#1f2937,#111827)}
+    .small{font-size:14px;color:var(--muted)}
+
+    /* Cards & Sections */
+    section{margin:34px 0}
+    .card{background:var(--card);padding:18px;border-radius:14px;border:1px solid rgba(255,255,255,0.02)}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .skills-list{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:var(--glass);padding:8px 10px;border-radius:10px;font-weight:600}
+
+    /* Projects */
+    .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .project{padding:14px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent)}
+    .project h4{margin:0 0 6px}
+    .project p{margin:0;color:var(--muted);font-size:14px}
+    .project .meta{margin-top:10px;display:flex;justify-content:space-between;align-items:center}
+
+    footer{padding:24px 20px;color:var(--muted);text-align:center}
+
+    /* Responsive */
+    @media (max-width: 900px){
+      .hero{grid-template-columns:1fr;}
+      .projects{grid-template-columns:1fr}
+      .grid-3{grid-template-columns:repeat(2,1fr)}
+      nav ul{display:none}
+      .mobile-nav{display:flex}
+    }
+
+    /* Mobile nav toggle */
+    .mobile-nav{display:none}
+    .menu-btn{background:transparent;border:1px solid rgba(255,255,255,0.04);padding:8px;border-radius:10px}
+
+    /* Contact */
+    .contact-form{display:grid;gap:10px}
+    input,textarea{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px;border-radius:8px;color:inherit}
+
+    /* small helpers */
+    .muted{color:var(--muted)}
+    .tag{font-size:12px;padding:6px 8px;border-radius:8px;background:rgba(255,255,255,0.03);display:inline-block}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="1" width="22" height="22" rx="6" fill="#0ea5e9"/></svg>
+      <div>
+        <h1>Reshma K</h1>
+        <div class="small">Entry-level Data Analyst</div>
+      </div>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div style="display:flex;gap:10px;align-items:center">
+      <a class="btn" href="RESHMA.pdf" download>Download Resume</a>
+      <button class="menu-btn mobile-nav" aria-label="menu" onclick="toggleMenu()">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about" class="hero">
+      <div class="intro card">
+        <h2>Hello — I'm Reshma</h2>
+        
+        <p>I’m an entry-level Data Analyst passionate about turning raw data into actionable insights. Skilled in Python, Power BI, and Machine Learning with hands-on experience in predictive modeling and dashboarding.</p>
+        <div class="links">
+          <a href="https://linkedin.com/in/reshma-kathirvel-56a080248/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/reshmakathir" target="_blank" rel="noopener">GitHub</a>
+          <span class="muted">Coimbatore • reshmakathirvel04@gmail.com • 9342519108</span>
+        </div>
+
+        <div style="margin-top:18px;display:flex;gap:8px;flex-wrap:wrap">
+          <span class="tag">B.E. Computer Science & Eng.</span>
+          <span class="tag">Advanced Certificate - IIT Roorkee</span>
+          <span class="tag">Power BI • Python • ML</span>
+        </div>
+      </div>
+
+      <aside class="photo card" aria-label="profile">
+        <!-- Replace src with your photo filename (photo.jpg) -->
+        <img class="avatar" src="reshma.jpg" alt="Reshma K — profile photo">
+        <div style="text-align:center">
+          <div style="font-weight:700">Reshma K</div>
+          <div class="small">Entry-level Data Analyst</div>
+          <div style="margin-top:10px;display:flex;gap:8px;justify-content:center">
+            <a class="small" href="https://linkedin.com/in/reshma-kathirvel-56a080248/" target="_blank">LinkedIn</a>
+            <a class="small" href="https://github.com/reshmakathir" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="skills">
+      <div class="card">
+        <h3>Skills</h3>
+        <div style="margin-top:10px" class="skills-list">
+          <span class="skill">Python</span>
+          <span class="skill">Pandas</span>
+          <span class="skill">NumPy</span>
+          <span class="skill">Scikit-learn</span>
+          <span class="skill">SQL</span>
+          <span class="skill">Power BI</span>
+          <span class="skill">Matplotlib</span>
+          <span class="skill">Seaborn</span>
+          <span class="skill">Plotly</span>
+          <span class="skill">Git</span>
+          <span class="skill">Excel</span>
+        </div>
+
+        <div style="margin-top:16px">
+          <strong class="small">Soft Skills:</strong> <span class="muted">Storytelling with Data • Communication • Analytical Thinking</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="card">
+        <h3>Experience</h3>
+        <div style="margin-top:12px">
+          <h4 style="margin:0">Data Science Intern — EXPOSYS (DATALAB)</h4>
+          <div class="small muted">Apr 2024 – Dec 2024 • Coimbatore</div>
+          <ul style="margin-top:10px;color:var(--muted)">
+            <li>Cleaned and preprocessed large datasets using Pandas and NumPy.</li>
+            <li>Built Linear Regression & Random Forest models achieving 85%+ accuracy for forecasting.</li>
+            <li>Developed interactive Power BI dashboards for performance monitoring.</li>
+            <li>Visualized insights with Matplotlib & Seaborn and documented workflows in Jupyter.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h3 style="margin-bottom:12px">Projects</h3>
+      <div class="projects">
+        <article class="project card">
+          <h4>AI-Based Crop Disease Detection</h4>
+          <div class="small muted">KGISL Institute of Technology</div>
+          <p>Convolutional Neural Network (TensorFlow) to classify leaf images. Achieved 92% accuracy with augmentation. Includes treatment recommendation system.</p>
+          <div class="meta">
+            <div class="muted">Tech: TensorFlow, Python, OpenCV</div>
+            <div><a href="#" onclick="openGit(event,'https://github.com/reshmakathir/TNSDC')">View</a></div>
+          </div>
+        </article>
+
+        <article class="project card">
+          <h4>Netflix Recommendation Engine</h4>
+          <div class="small muted">Intellipaat</div>
+          <p>Designed and implemented a Netflix-style recommendation system using content-based and collaborative filtering (cosine similarity, SVD) on the MovieLens dataset (100k+ ratings, 9k+ movies) with data cleaning, feature engineering, and preprocessing to deliver personalized recommendations.</p>
+          <div class="meta">
+            <div class="muted">Tech: Python, Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, Jupyter Notebook, Machine Learning, Data Visualization</div>
+            <div><a href="#" onclick="openGit(event,'https://github.com/reshmakathir/netflix_changer')">View</a></div>
+          </div>
+        </article>
+
+        <article class="project card">
+          <h4>MEDICO Attendtance Dashboard</h4>
+          <div class="small muted">Intellipaat</div>
+          <p>Performed data cleaning, transformation, and standardization of column formats to ensure accuracy and consistency. Designed intuitive visualizations to track key metrics, trends, and comparisons across months, enabling stakeholders to quickly identify changes and patterns in the data.</p>
+          <div class="meta">
+            <div class="muted">Tech: Power BI, DAX</div>
+            <div><a href="#" onclick="openGit(event,'https://github.com/reshmakathir/medico-analysis')">View</a></div>
+          </div>
+        </article>
+
+        <article class="project card">
+          <h4>Forecasting and Sales Analysis</h4>
+          <p class="muted">Jupyter Notebooks with EDA, forecasting, and classification examples available in my GitHub profile.</p>
+          <div class="meta">
+            <div class="muted">Tech: Jupyter, Matplotlib, Seaborn</div>
+            <div><a href="https://github.com/reshmakathir/walmart-project" target="_blank">GitHub</a></div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="certs">
+      <div class="card">
+        <h3>Certifications</h3>
+        <ul style="color:var(--muted);margin-top:8px">
+          <li>Advanced Certificate in Data Science & Machine Learning — IIT Roorkee, Intellipaat (2024)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="card">
+        <h3>Education</h3>
+        <div style="margin-top:10px;color:var(--muted)">
+          <div><strong>KGISL Institute of Technology</strong> — B.E. Computer Science & Engineering (75%)</div>
+          <div style="margin-top:6px"><strong>Shanthi Rani Matriculation Higher Secondary School</strong> — HSC (91.4%)</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="card">
+        <h3>Contact</h3>
+        <p class="muted">I’m open to internships and entry-level roles in Data Analysis / Data Science. Reach out via email or LinkedIn.</p>
+        <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:10px">
+          <a class="btn" href="mailto:reshmakathirvel04@gmail.com">Email Me</a>
+          <a class="btn" href="https://linkedin.com/in/reshma-kathirvel-56a080248/" target="_blank">LinkedIn</a>
+        </div>
+
+        <div style="margin-top:14px">
+          <form class="contact-form" onsubmit="submitContact(event)">
+            <input type="text" id="name" placeholder="Your name" required />
+            <input type="email" id="email" placeholder="Your email" required />
+            <textarea id="message" rows="4" placeholder="Message"></textarea>
+            <button class="btn" type="submit">Send (opens mail)</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2025 Reshma K • Built with ❤️ • <a href="https://github.com/reshmakathir" target="_blank">GitHub</a>
+  </footer>
+
+  <script>
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',function(e){
+        const href=this.getAttribute('href');
+        if(href.startsWith('#')){
+          e.preventDefault();
+          const el=document.querySelector(href);
+          if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
+        }
+      })
+    })
+
+    function toggleMenu(){
+      const nav = document.querySelector('nav ul');
+      if(!nav) return;
+      nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+      nav.style.flexDirection = 'column';
+      nav.style.position = 'absolute';
+      nav.style.right = '20px';
+      nav.style.top = '64px';
+      nav.style.background = 'rgba(11,18,28,0.9)';
+      nav.style.padding = '12px';
+    }
+
+    function submitContact(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const msg = document.getElementById('message').value.trim();
+      const subject = encodeURIComponent('Portfolio Contact from ' + name);
+      const body = encodeURIComponent('Name: '+name+'\nEmail: '+email+'\n\n'+msg);
+      window.location.href = 'mailto:reshmakathirvel04@gmail.com?subject='+subject+'&body='+body;
+    }
+
+    function openGit(e,url){
+      e.preventDefault();
+      window.open(url,'_blank');
+    }
+  </script>
+</body>
+</html>
